@@ -3,3 +3,41 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+body{
+    background-color: #093009;
+}
+nav{
+    background-color:black;
+    color: white;
+    align-items: center;
+    width: 90%;
+    margin: 0% 5%;
+    display: inline-flex;
+}
+img{
+    width: 150px;
+    height: 100px;
+    margin-left: 40%;
+}
+.logo{
+    margin-left: 5%;
+    margin-right: 30%;
+}
+.center{
+    margin: 5% 30%;
+    border: white;
+    border-width: 2%;
+    background-color: #0D3E10;
+    align-items: center;
+    color: white;
+}
+.center input[type=button]{
+    background-color: #369457;
+    margin: 1% 45%;
+}
+.quotes{
+    background-color: #1F6032;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 15px;
+}
