@@ -7,6 +7,38 @@
     <link rel ="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+    <nav>
+        <img src="img/logo.png"><span class="logo">Breaking Bad Quotes</span>
+    </nav>
+    <div class="center">
+        <div class="quotes" id="texto">
+            Click the button below this area !
+        </div>
+        <input type="button" id="search"value="change">
+    </div>
+    <script>
+        var id=0;
+        
+        document.getElementById('search').onclick = () =>{
+        document.getElementById('texto').innerHTML="";
+        var url = "https://www.breakingbadapi.com/api/quotes";
+        fetch(url)
+            .then(response => response.json())
+            .then(data => mostrarData(data))
+            .catch(error => console.log(error))
+        const mostrarData = (data) => {            
+            let frase='';
+            document.getElementById('texto').innerHTML="";
+            console.log(id);
+            if(id==69)
+            id=0;
+            frase+="\""+data[id].quote+"\"";
+            frase+="<br> -"+data[id].author;
+            document.getElementById('texto').innerHTML=frase;
+            id++;
+        }
     
+}
+    </script>
 </body>
 </html>
