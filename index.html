@@ -18,9 +18,18 @@
     </div>
     <script>
         var id=0;
-        
         document.getElementById('search').onclick = () =>{
-        document.getElementById('texto').innerHTML="";
+        var texto =document.getElementById('texto');
+        texto.innerHTML="";
+        if(id%3==0)
+            texto.style.borderStyle='dotted';
+        else if(id%2==0)
+            texto.style.borderStyle='double'
+        else
+            texto.style.borderStyle='solid'
+        texto.style.borderWidth='5px';
+        texto.style.transform='scale(1.1,1.1)'  
+        texto.innerHTML="LOADING..."
         var url = "https://www.breakingbadapi.com/api/quotes";
         fetch(url)
             .then(response => response.json())
@@ -28,15 +37,29 @@
             .catch(error => console.log(error))
         const mostrarData = (data) => {            
             let frase='';
-            document.getElementById('texto').innerHTML="";
+            texto.innerHTML="";
             console.log(id);
             if(id==69)
             id=0;
             frase+="\""+data[id].quote+"\"";
             frase+="<br> -"+data[id].author;
-            document.getElementById('texto').innerHTML=frase;
+            console.log('Taking a break...');
+                sleep(2000);
+                console.log('Two second later');
+            texto.innerHTML=frase;
+            texto.style.transform='scale(1,1)' 
             id++;
         }
+        function sleep(milliseconds) {
+        var start = new Date().getTime();
+            for (var i = 0; i < 1e7; i++) {
+                if ((new Date().getTime() - start) > milliseconds) {
+                break;
+                }
+            }
+        }
+
+
     
 }
     </script>
