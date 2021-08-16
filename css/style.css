@@ -15,6 +15,7 @@ nav{
     display: inline-flex;
     border-color: green;
     border-radius:25px;
+    border-width:10px;
 }
 img{
     width: 150px;
