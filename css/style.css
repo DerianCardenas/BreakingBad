@@ -13,6 +13,8 @@ nav{
     width: 90%;
     margin: 0% 5%;
     display: inline-flex;
+    border-color: green;
+    border-radius:25px;
 }
 img{
     width: 150px;
