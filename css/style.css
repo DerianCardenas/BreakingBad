@@ -4,56 +4,72 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #093009;
+    background-color: #476072;
 }
 nav{
-    background-color:black;
+    font-size: 20px;
+    background-color:#548CA8;
     color: white;
     align-items: center;
     width: 90%;
     margin: 0% 5%;
     display: inline-flex;
-    border-color: white;
-    border-radius:25px;
-    border-width:10px;
+    border-radius: 15px;
+    border-width: 15px;
 }
 img{
     width: 150px;
     height: 100px;
     margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .logo{
     margin-left: 5%;
     margin-right: 30%;
 }
 .center{
-    margin: 5% 30%;
+    margin: 5% 40%;
     border: white;
-    border-width: 2%;
-    background-color: #0D3E10;
+    border-width: 10px;
+    border-radius: 10px;
+    background-color: #334257;
     align-items: center;
-    color: white;
+    color: #000;
 }
 .center input[type=button]{
-    background-color: #369457;
-    margin: 1% 45%;
-    transition: .25s linear;
+    border-color: #334257;
+    background-image: -webkit-linear-gradient(45deg, #548CA8 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #548CA8 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    margin: 1% 42%;
+    font-size: 15px;
+    height: auto;
     border-radius: 10px;
 }
-/*.center input[type=button]:focus{
-    background-color: white;
-}*/
-.center input[type=button]:hover{
+.center input[type=button]:hover {
+    border-color: #334257;
+    color: #000;
+    background-position: 0;
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-}
+  }
+.center input[type=button]:active {
+    transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+  }
 .quotes{
-    background-color: #1F6032;
+    background-color: #EEEEEE;
     margin-top: 1%;
     text-align: center;
-    font-size: 15px;
+    border-width: 10px;
+    border-radius: 10px;
+    height: auto;
+    font-size: 30px;
     transition: 1000ms linear;
-}
-.quotes:hover{
-    transform: scale(1.1,1.1);
 }
