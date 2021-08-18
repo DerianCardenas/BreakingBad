@@ -73,14 +73,14 @@ img{
     font-size: 30px;
     transition: 1000ms linear;
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:900px){
     .center{
         margin: 2% 10%;
         max-width: 90%;
     }
     .quotes{
         width: auto;
-        max-height: 250px;
+        max-height: 30%;
         font-size: 20px;        
     }
 }
