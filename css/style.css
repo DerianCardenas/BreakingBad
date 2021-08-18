@@ -36,6 +36,8 @@ img{
     background-color: #334257;
     align-items: center;
     color: #000;
+    max-height: 40%;
+        max-width: 70%;
 }
 .center input[type=button]{
     border-color: #334257;
