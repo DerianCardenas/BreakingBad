@@ -73,7 +73,7 @@ img{
     font-size: 30px;
     transition: 1000ms linear;
 }
-@media screen and (max-width;720px){
+@media screen and (max-width:720px){
     .center{
         margin: 2% 10%;
         max-width: 90%;
