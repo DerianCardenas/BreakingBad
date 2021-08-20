@@ -21,12 +21,7 @@
         document.getElementById('search').onclick = () =>{
         var texto =document.getElementById('texto');
         texto.innerHTML="";
-        if(id%3==0)
-            texto.style.borderStyle='dotted';
-        else if(id%2==0)
-            texto.style.borderStyle='double'
-        else
-            texto.style.borderStyle='solid'
+        texto.style.borderStyle="solid";
         texto.style.borderWidth='5px';
         texto.style.transform='scale(1.1,1.1)' 
         cambiarClase();
