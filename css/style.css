@@ -79,6 +79,9 @@ img{
     img{
         margin-left: 10%;
     }
+    .logo{
+        margin-right: 10%;
+    }
     .center{
         margin: 2% 10%;
         max-width: 90%;
@@ -91,6 +94,11 @@ img{
 }
 @media screen and (max-width:500px){
     img{
-        margin-left:5%;
+        align-self:center;
+        margin-left: 5%;
+    }
+    .logo{
+        align-self:center;
+        margin-right: 5%;
     }
 }
