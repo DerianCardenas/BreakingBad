@@ -20,13 +20,13 @@ nav{
 img{
     width: 150px;
     height: 100px;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 .logo{
     margin-left: 5%;
-    margin-right: 30%;
+    margin-right: 10%;
 }
 .center{
     margin: 5% 20%;
@@ -76,13 +76,7 @@ img{
     transition: 1000ms linear;
 }
 @media screen and (max-width:900px){
-    img{
-        margin-left: 10%;
-    }
-    .logo{
-        margin-right: 10%;
-        max-width: 20%;
-    }
+
     .center{
         margin: 2% 10%;
         max-width: 90%;
@@ -91,13 +85,5 @@ img{
         width: auto;
         max-height: 30%;
         font-size: 20px;        
-    }
-}
-@media screen and (max-width:500px){
-    img{
-        margin-left: 5%;
-    }
-    .logo{
-        margin-right: 5%;
     }
 }
