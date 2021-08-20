@@ -76,7 +76,9 @@ img{
     transition: 1000ms linear;
 }
 @media screen and (max-width:900px){
-    
+    img{
+        margin-left: 10%;
+    }
     .center{
         margin: 2% 10%;
         max-width: 90%;
@@ -85,5 +87,10 @@ img{
         width: auto;
         max-height: 30%;
         font-size: 20px;        
+    }
+}
+@media screen and (max-width:500px){
+    img{
+        margin-left:5%;
     }
 }
