@@ -81,6 +81,7 @@ img{
     }
     .logo{
         margin-right: 10%;
+        max-width: 20%;
     }
     .center{
         margin: 2% 10%;
