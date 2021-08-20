@@ -29,9 +29,7 @@
             texto.style.borderStyle='solid'
         texto.style.borderWidth='5px';
         texto.style.transform='scale(1.1,1.1)' 
-        if (texto.className == "texto") {
-          texto.className = "spinner";
-        }
+        texto.className = "spinner";
         var url = "https://www.breakingbadapi.com/api/quotes";
         fetch(url)
             .then(response => response.json())
@@ -48,7 +46,7 @@
             console.log('Taking a break...');
                 sleep(2000);
                 console.log('Two second later');
-            texto.className = "texto";
+            texto.className = "quotes";
             texto.innerHTML=frase;
             texto.style.transform='scale(1,1)' 
             id++;
