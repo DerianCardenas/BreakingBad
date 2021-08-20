@@ -86,4 +86,16 @@ img{
         max-height: 30%;
         font-size: 20px;        
     }
+    .logo{
+        margin-left:25%;
+    }
+}
+@media screen and (max-width:500px){
+    img{
+        margin-left:2%;
+    }
+    .logo{
+        margin-left:10%;
+        margin-right:2%;
+    }
 }
