@@ -25,7 +25,10 @@
         texto.style.borderStyle='solid'
         texto.style.borderWidth='5px';
         texto.style.transform='scale(1.1,1.1)';
-        texto.innerHTML="LOADING..."
+        texto.innerHTML=" ";
+        var spinner = document.createElement('div');
+        spinner.className="spinner";
+        texto.appendChild(spinner);
         var url = "https://www.breakingbadapi.com/api/quotes";
         fetch(url)
             .then(response => response.json())
@@ -41,6 +44,7 @@
             frase+="<br> -"+data[id].author;
             sleep(1000);
             sleep(1000);
+            texto.removeChild(texto.childNode[0]);
             texto.innerHTML=frase;
             texto.style.transform='scale(1,1)' 
             id++;
@@ -53,6 +57,7 @@
                 }
             }
         }
+            
 }
     </script>
 </body>
