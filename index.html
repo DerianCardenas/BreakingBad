@@ -26,7 +26,7 @@
         texto.style.borderStyle="solid";
         texto.style.borderWidth='5px';
         texto.style.transform='scale(1.1,1.1)' 
-        cambiarClase();
+        agrega();
         var url = "https://www.breakingbadapi.com/api/quotes";
         fetch(url)
             .then(response => response.json())
@@ -43,7 +43,7 @@
             console.log('Taking a break...');
                 sleep(2000);
                 console.log('Two second later');
-            cambiarClase();
+            elimina();
             sleep(1000);
             texto.innerHTML=frase;
             texto.style.transform='scale(1,1)' 
@@ -57,15 +57,17 @@
                 }
             }
         }
-         function cambiarClase() {
-           var elemento =  document.getElementById("texto");
-
-           if (elemento.className== "spinner") {
-                elemento.className = "quotes"
-           } else {
-                elemento.className = "spinner"
-           }
-        }    
+         function agrega() {
+            var elemento =  document.getElementById("texto");
+            var spinner = document.createElement('div');
+            spinner.
+            spinner.className="spinner";
+            elemento.appendChild(spinner);
+        }   
+        function elimina(){
+            var elemento =  document.getElementById("texto");
+            elemento.removeChild(elemento.childNodes[0]);
+        }
 }
     </script>
 </body>
