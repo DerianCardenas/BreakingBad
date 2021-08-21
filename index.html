@@ -22,9 +22,8 @@
         var id=0;
         document.getElementById('search').onclick = () =>{
         var texto =document.getElementById('texto');
-        texto.innerHTML="";
         texto.style.transform='scale(1.1,1.1)';
-        agrega();
+        texto.innerHTML="";
         var url = "https://www.breakingbadapi.com/api/quotes";
         fetch(url)
             .then(response => response.json())
@@ -38,10 +37,7 @@
             id=0;
             frase+="\""+data[id].quote+"\"";
             frase+="<br> -"+data[id].author;
-            console.log('Taking a break...');
-                sleep(2000);
-                console.log('Two second later');
-            elimina();
+            sleep(1000);
             sleep(1000);
             texto.innerHTML=frase;
             texto.style.transform='scale(1,1)' 
@@ -54,17 +50,6 @@
                 break;
                 }
             }
-        }
-         function agrega() {
-            var elemento =  document.getElementById("texto");
-            var spinner = document.createElement('div');
-            spinner.
-            spinner.className="spinner";
-            elemento.appendChild(spinner);
-        }   
-        function elimina(){
-            var elemento =  document.getElementById("texto");
-            elemento.removeChild(elemento.childNodes[0]);
         }
 }
     </script>
