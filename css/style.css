@@ -47,17 +47,13 @@ img{
   }
 }
 .center{
-    margin-top: 5%;
-    border: white;
+    margin: 5% 40%;
     border-width: 10px;
     border-radius: 10px;
     background-color: #334257;
     color: #000;
     max-height: 40%;
     max-width: 70%;
-    padding:auto;
-    display:inline-flex;
-    justify-content:center;
 }
 .center input[type=button]{
     border-color: #334257;
@@ -90,12 +86,12 @@ img{
     margin-top: 1%;
     margin-left:20%;
     margin-right:20%;
-    text-align: center;
-    border-width: 10px;
-    border-radius: 10px;
-    height: auto;
-    font-size: 30px;
-    transition: 1000ms linear;
+        text-align: center;
+        border-width: 10px;
+        border-radius: 10px;
+        height: auto;
+        font-size: 30px;
+        transition: 1000ms linear;
 
 }
 @media screen and (max-width:900px){
