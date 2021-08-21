@@ -57,7 +57,7 @@ img{
     color: #000;
     max-height: 40%;
     max-width: 70%;
-    justify-content:flex;
+    justify-content:center;
 }
 .center input[type=button]{
     border-color: #334257;
