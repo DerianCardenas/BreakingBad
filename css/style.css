@@ -48,7 +48,7 @@ img{
 }
 .center{
     margin: 5%;
-    margin-left:15%
+    margin-left:25%;
     border-width: 10px;
     border-radius: 10px;
     background-color: #334257;
@@ -90,6 +90,7 @@ img{
         text-align: center;
         border-width: 10px;
         border-radius: 10px;
+    border-color: #000;
         height: auto;
         font-size: 30px;
         transition: 1000ms linear;
