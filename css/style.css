@@ -48,6 +48,7 @@ img{
 }
 .center{
     margin: 5%;
+    margin-left:15%
     border-width: 10px;
     border-radius: 10px;
     background-color: #334257;
