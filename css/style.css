@@ -47,7 +47,7 @@ img{
   }
 }
 .center{
-    margin: 5%;
+    margin-top: 5%;
     border: white;
     border-width: 10px;
     border-radius: 10px;
@@ -55,7 +55,8 @@ img{
     color: #000;
     max-height: 40%;
     max-width: 70%;
-    display:inline-block;
+    padding:auto;
+    display:flex;
     justify-content:center;
 }
 .center input[type=button]{
@@ -86,7 +87,7 @@ img{
   }
 .quotes{
     background-color: #EEEEEE;
-    margin: 1% 5%;
+    margin-top: 1%;
     text-align: center;
     border-width: 10px;
     border-radius: 10px;
