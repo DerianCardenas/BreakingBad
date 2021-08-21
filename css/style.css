@@ -84,17 +84,15 @@ img{
   }
 .quotes{
     background-color: #EEEEEE;
-    margin-top: 5%;
-    margin-left:20%;
-    margin-right:20%;
-        text-align: center;
-        border-width: 10px;
-        border-radius: 10px;
+    margin: 5%;
+    width: auto;
+    text-align: center;
+    border-width: 10px;
+    border-radius: 10px;
     border-color: #000;
-        height: auto;
-        font-size: 30px;
-        transition: 1000ms linear;
-
+    height: auto;
+    font-size: 30px;
+    transition: 1000ms linear;
 }
 @media screen and (max-width:900px){
 
