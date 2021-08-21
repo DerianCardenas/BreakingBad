@@ -53,10 +53,11 @@ img{
     border-width: 10px;
     border-radius: 10px;
     background-color: #334257;
-    display:flex;
+    
     color: #000;
     max-height: 40%;
     max-width: 70%;
+    display:flex;
     justify-content:center;
 }
 .center input[type=button]{
@@ -94,6 +95,8 @@ img{
     height: auto;
     font-size: 30px;
     transition: 1000ms linear;
+    display:flex;
+    justify-content:center;
 }
 @media screen and (max-width:900px){
 
