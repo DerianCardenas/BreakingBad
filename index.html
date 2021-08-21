@@ -34,15 +34,17 @@
             .catch(error => console.log(error))
         const mostrarData = (data) => {            
             let frase='';
-            texto.innerHTML="";
+            
             console.log(id);
             if(id==69)
             id=0;
             frase+="\""+data[id].quote+"\"";
             frase+="<br> -"+data[id].author;
-            sleep(1000);
-            sleep(1000);
+            
             cambiarClase();
+            sleep(1000);
+            sleep(1000);
+            
             texto.innerHTML=frase;
             texto.style.transform='scale(1,1)' 
             id++;
