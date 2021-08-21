@@ -53,7 +53,7 @@ img{
     border-width: 10px;
     border-radius: 10px;
     background-color: #334257;
-    align-items: center;
+    display:flex;
     color: #000;
     max-height: 40%;
     max-width: 70%;
