@@ -35,9 +35,13 @@ img{
   border-radius: 50%;
   border-left-color: #09f;
   animation: spin 1s ease infinite;
-  position: absolute;
+  position: relative;
 }
-
+.center .spinner{
+    display:flex;
+    justify-content:center;
+    margin-left:45%;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
