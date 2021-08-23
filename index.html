@@ -22,6 +22,7 @@
         var id=0;
         document.getElementById('search').onclick = () =>{
         var texto =document.getElementById('texto');
+            $('#search').hide();
         texto.style.borderStyle='solid'
         texto.style.borderWidth='5px';
         texto.style.transform='scale(1.1,1.1)';
@@ -48,6 +49,7 @@
             texto.innerHTML=frase;
             texto.style.transform='scale(1,1)' 
             id++;
+            $('#search').show();
         }
         function sleep(milliseconds) {
         var start = new Date().getTime();
