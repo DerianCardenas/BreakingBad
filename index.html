@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Breaking Bad</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel ="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -23,7 +22,7 @@
         var id=0;
         document.getElementById('search').onclick = () =>{
         var texto =document.getElementById('texto');
-        document.getElementById('search').hide();
+        document.getElementById('search').style.display = 'none';
         texto.style.borderStyle='solid'
         texto.style.borderWidth='5px';
         texto.style.transform='scale(1.1,1.1)';
@@ -50,7 +49,7 @@
             texto.innerHTML=frase;
             texto.style.transform='scale(1,1)' 
             id++;
-            document.getElementById('search').show();
+            document.getElementById('search').style.display = 'inline';
         }
         function sleep(milliseconds) {
         var start = new Date().getTime();
