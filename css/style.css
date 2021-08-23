@@ -35,7 +35,7 @@ img{
   border-radius: 50%;
   border-left-color: #09f;
   animation: spin 1s ease infinite;
-  position: absolute;
+  
 }
 .center .spinner{
     display:flex;
