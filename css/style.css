@@ -113,6 +113,9 @@ img{
         max-height: 30%;
         font-size: 20px;        
     }
+    .center .spinner{
+        margin-left:40%;
+    }
     .logo{
         margin-left:25%;
     }
