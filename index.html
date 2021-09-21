@@ -11,46 +11,46 @@
         <img src="img/logo.png"><span class="logo">Breaking Bad Quotes</span>
     </nav>
     <div class="center">
-        <div class="quotes" id="texto">
-            Click the button below this area !
-        </div>
         <div class="wrapper">
+            <div class="quotes" id="texto">
+                Click the button below this area !
+                </div>
             <input type="button" id="search"value="Next">
         </div>
     </div>
     <script>
         var id=0;
         document.getElementById('search').onclick = () =>{
-        var texto =document.getElementById('texto');
-        document.getElementById('search').style.display = 'none';
-        texto.style.borderStyle='solid'
-        texto.style.borderWidth='5px';
-        texto.style.transform='scale(1.1,1.1)';
-        texto.innerHTML=" ";
-        cambiarClase();
-        var url = "https://www.breakingbadapi.com/api/quotes";
-        fetch(url)
-            .then(response => response.json())
-            .then(data => mostrarData(data))
-            .catch(error => console.log(error))
-        const mostrarData = (data) => {            
-            let frase='';
-            
-            console.log(id);
-            if(id==69)
-            id=0;
-            frase+="\""+data[id].quote+"\"";
-            frase+="<br> -"+data[id].author;
-            
+            var texto =document.getElementById('texto');
+            document.getElementById('search').style.display = 'none';
+            texto.style.borderStyle='solid'
+            texto.style.borderWidth='5px';
+            texto.style.transform='scale(1.1,1.1)';
+            texto.innerHTML=" ";
             cambiarClase();
-            sleep(1000);
-            sleep(1000);
-            
-            texto.innerHTML=frase;
-            texto.style.transform='scale(1,1)' 
-            id++;
-            document.getElementById('search').style.display = 'inline';
-        }
+            var url = "https://www.breakingbadapi.com/api/quotes";
+            fetch(url)
+                .then(response => response.json())
+                .then(data => mostrarData(data))
+                .catch(error => console.log(error))
+            const mostrarData = (data) => {            
+                let frase='';
+                
+                console.log(id);
+                if(id==69)
+                    id=0;
+                frase+="\""+data[id].quote+"\"";
+                frase+="<br> -"+data[id].author;
+                
+                cambiarClase();
+                sleep(1000);
+                sleep(1000);
+                
+                texto.innerHTML=frase;
+                texto.style.transform='scale(1,1)' 
+                id++;
+                document.getElementById('search').style.display = 'inline';
+            }
         function sleep(milliseconds) {
         var start = new Date().getTime();
             for (var i = 0; i < 1e7; i++) {
